@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hello</title>
+    <script type="text/javascript">
+    // document.querySelector('#id')
+    // document.querySelector('.class')
+    // document.querySelector('tag')
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('form').onsubmit = function() {
+            const name = document.querySelector('#name').value;
+            alert(`Hello, ${name}!`)
+
+        };
+    })
+    </script>
+</head>
+
+<body>
+    <!-- Event-driven programming! -->
+    <h1>Hello</h1>
+    <h1>123</h1>
+    <h2>33</h2>
+    <form>
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
